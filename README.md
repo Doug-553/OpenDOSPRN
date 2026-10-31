@@ -26,7 +26,7 @@ código do Windows e o texto em inglês.
 - `Serviço`: exporta/importa configurações em INI. Config no registro: `HKCU\Software\OpenDOSPRN`.
 - Parâmetro `/show` abre a janela mesmo com "Iniciar minimizado".
 
-## Não implementado (diferenças em relação ao original)
+## Não implementado
 - `DosprnLoader*.exe` / `DosprnIntegration*.dll` (integração com DOSBox/VMs), driver SPOOLPRN (Win9x), fonte MICR.
 - Download de caracteres (`ESC &`), comandos `ESC (` (ignorados), proporcional, NLQ.
 - PDF sem incorporar fontes (usa Courier padrão; acentos Latin-1/WinAnsi; CJK vira `?`).
