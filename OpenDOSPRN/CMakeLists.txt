@@ -1,0 +1,8 @@
+cmake_minimum_required(VERSION 3.16)
+project(OpenDOSPRN CXX RC)
+set(CMAKE_CXX_STANDARD 17)
+file(GLOB SRC src/*.cpp)
+add_executable(OpenDOSPRN WIN32 ${SRC} res/app.rc)
+target_compile_definitions(OpenDOSPRN PRIVATE UNICODE _UNICODE)
+target_link_options(OpenDOSPRN PRIVATE -municode -static -static-libgcc -static-libstdc++)
+target_link_libraries(OpenDOSPRN comctl32 comdlg32 winspool shell32 ole32 advapi32 gdi32 user32)
